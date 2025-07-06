@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add favicon -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Plider 10 - Terms and Conditions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Marked.js for Markdown parsing -->
+    <script src="./js/marked.min.js"></script>
+    <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .hero {
+            background: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .content {
+            padding: 60px 0;
+        }
+        .navbar-brand-container {
+            padding: 10px;
+            background-color: cornflowerblue;
+        }
+        .navbar-custom {
+            background-color: cornflowerblue !important;
+            border-radius: 1.5rem 0rem 1.5rem 0rem !important;
+        }
+        .logo-img {
+            margin-right: 10px;
+            border-radius: 15%;
+        }
+        .terms-content {
+            margin-bottom: 40px;
+        }
+        #termsContent {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-custom">
+        <a class="navbar-brand d-flex align-items-center justify-content-center navbar-brand-container" href="index.html">
+            <img src="./images/icon-1024-maskable.png" alt="Logo" class="d-inline-block align-top mx-auto rounded logo-img" width="64" height="64">
+            <span class="d-none d-lg-inline pl-2">Plider 10</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#changelog">Change Log</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Terms and Conditions Section -->
+    <section class="content">
+        <div class="container terms-content">
+            <h1 class="text-center mb-4">Terms and Conditions</h1>
+            <div id="termsContent" class="mt-5">
+                <!-- Terms content will be loaded here -->
+            </div>
+            <div class="text-center mt-5">
+                <a href="index.html" class="btn btn-primary">Back to Homepage</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Made by balamt.dev for Windows 10 Users</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="terms.html" class="btn btn-link">Terms &amp; Conditions</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="privacy.html" class="btn btn-link">Privacy Policy</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modal Template -->
+    <div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" id="contentModalDialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contentModalLabel">Content</h5>
+                    <div class="ml-auto d-flex align-items-center">
+                        <button type="button" class="btn btn-sm btn-outline-secondary mr-2" id="toggleFullScreenBtn" title="Toggle Fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary mr-2" id="printPdfBtn" title="Print as PDF">
+                            <i class="fas fa-print"></i>
+                        </button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .modal-fullscreen {
+            width: 100vw !important;
+            max-width: 100vw !important;
+            height: 100vh !important;
+            margin: 0 !important;
+        }
+        .modal-fullscreen .modal-content {
+            height: 100vh !important;
+            border-radius: 0 !important;
+        }
+        .modal-fullscreen .modal-body {
+            height: calc(100vh - 56px) !important;
+            max-height: none !important;
+        }
+    </style>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        function loadContent(file1, file2) {
+            fetch(file1)
+                .then(response => response.text())
+                .then(text1 => {
+                    fetch(file2)
+                        .then(response => response.text())
+                        .then(text2 => {
+                            document.getElementById('modalContent').innerHTML = marked.parse(text1 + '\n\n' + text2);
+                        });
+                });
+        }
+
+        // Load terms and conditions content when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('tnc-key-points.md')
+                .then(response => response.text())
+                .then(text1 => {
+                    fetch('TnC.md')
+                        .then(response => response.text())
+                        .then(text2 => {
+                            document.getElementById('termsContent').innerHTML = marked.parse(text1 + '\n\n' + text2);
+                        });
+                });
+                
+            // Fullscreen toggle for modal
+            var dialog = document.getElementById('contentModalDialog');
+            var btn = document.getElementById('toggleFullScreenBtn');
+            var icon = btn.querySelector('i');
+            btn.addEventListener('click', function () {
+                dialog.classList.toggle('modal-fullscreen');
+                if (dialog.classList.contains('modal-fullscreen')) {
+                    icon.classList.remove('fa-expand');
+                    icon.classList.add('fa-compress');
+                } else {
+                    icon.classList.remove('fa-compress');
+                    icon.classList.add('fa-expand');
+                }
+            });
+
+            // Print as PDF
+            document.getElementById('printPdfBtn').addEventListener('click', function () {
+                var printContents = document.getElementById('modalContent').innerHTML;
+                var win = window.open('', '', 'height=800,width=800');
+                win.document.write('<html><head><title>Print Content</title>');
+                win.document.write('<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">');
+                win.document.write('</head><body>');
+                win.document.write(printContents);
+                win.document.write('</body></html>');
+                win.document.close();
+                win.focus();
+                win.print();
+                win.close();
+            });
+        });
+    </script>
+</body>
+</html>

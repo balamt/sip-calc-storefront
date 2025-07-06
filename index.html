@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Add favicon -->
     <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
-    <title>Dev Utilities</title>
+    <title>SIP Calculator</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
     <!-- Marked.js for Markdown parsing -->
     <script src="./js/marked.min.js"></script>
-        <!-- Custom CSS -->
+    <!-- Custom CSS -->
     <style>
         body {
             padding-top: 56px;
@@ -37,86 +37,94 @@
         .brand-text {
             padding-left: 0.5rem;
         }
-    </style>
+        .logo-img {
             margin-right: 10px;
             border-radius: 15%;
+        }
+        .max-height-400 {
+            max-height: 400px;
         }
     </style>
 </head>
 <body>
-            <span class="d-none d-lg-inline brand-text">Dev Utilities</span>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand d-flex align-items-center justify-content-center" href="#" style="padding: 10px;">
-            <img src="./images/icon-1024-maskable.png" alt="Logo" class="d-inline-block align-top mx-auto rounded logo-img" width="64" height="64">
-            <span class="d-none d-lg-inline pl-2">Dev Utilities</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#hero">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#features">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./images/logo.png" alt="Logo" class="d-inline-block align-top rounded logo-img" width="48" height="48">
+                <span class="d-none d-lg-inline brand-text">SIP Calculator</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container">
-            <h1 class="display-4">Simplify Your Development Workflow with Dev Utilities</h1>
-            <p class="lead">Dev Utilities offers an all-in-one toolkit for developers to streamline, optimize, and automate daily development tasks effortlessly.</p>
-            <a href="#" class="btn btn-primary btn-lg">Get Started Free</a>
+            <h1 class="display-4">Calculate Your SIP Returns Easily</h1>
+            <p class="lead">A simple tool that helps you calculate potential returns on your mutual fund investments made through Systematic Investment Plan (SIP).</p>
+            <a href="#" class="btn btn-primary btn-lg">Download App</a>
             <a href="#features" class="btn btn-secondary btn-lg">Explore Features</a>
-            <img src="./images/icon-1024-maskable.png" alt="Hero Image" class="img-fluid mt-4">
+            <div class="row mt-4">
+                <div class="col-md-8 offset-md-2">
+                    <img src="./SIP-tablet-Screenshot.png" alt="SIP Calculator Screenshot" class="img-fluid mt-4">
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Key Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="text-center">Powerful Tools, All in One Place</h2>
+            <h2 class="text-center">Features of SIP Calculator</h2>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-code fa-3x mb-3"></i>
-                    <h4>Code Formatter & Beautifier</h4>
-                    <p>Automatically format your code for better readability and maintainability.</p>
+                    <i class="fas fa-user-friends fa-3x mb-3"></i>
+                    <h4>Simple and Easy to Use</h4>
+                    <p>User-friendly interface making it easy for anyone to calculate their SIP returns.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-vial fa-3x mb-3"></i>
-                    <h4>Regex Tester</h4>
-                    <p>Quickly build, test, and debug regular expressions.</p>
+                    <i class="fas fa-calculator fa-3x mb-3"></i>
+                    <h4>Accurate Calculations</h4>
+                    <p>Provides accurate calculations based on your inputs, ensuring reliable results.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-code-branch fa-3x mb-3"></i>
-                    <h4>JSON Formatter/Validator</h4>
-                    <p>Easily format and validate JSON data with a single click.</p>
+                    <i class="fas fa-sliders-h fa-3x mb-3"></i>
+                    <h4>Customizable Inputs</h4>
+                    <p>Input your investment amount, expected rate of return, and investment duration for personalized results.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-bolt fa-3x mb-3"></i>
+                    <h4>Instant Results</h4>
+                    <p>Get instant results to quickly assess your potential investment returns.</p>
                 </div>
                 <div class="col-md-4 text-center">
                     <i class="fas fa-lock fa-3x mb-3"></i>
-                    <h4>Hash Generator</h4>
-                    <p>Generate secure hashes for encryption and verification.</p>
+                    <h4>No Registration Required</h4>
+                    <p>Access the calculator without registration or providing personal information, ensuring privacy.</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <i class="fas fa-exchange-alt fa-3x mb-3"></i>
-                    <h4>Base64 Encode/Decode</h4>
-                    <p>Convert data to Base64 encoding and decode effortlessly.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-network-wired fa-3x mb-3"></i>
-                    <h4>Live API Tester</h4>
-                    <p>Test your APIs live, inspect responses, and debug efficiently.</p>
+                    <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                    <h4>Responsive Design</h4>
+                    <p>Works seamlessly on both web and mobile devices, providing a consistent user experience.</p>
                 </div>
             </div>
             <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">Explore More Tools →</a>
+                <a href="#" class="btn btn-primary">Download Now</a>
             </div>
         </div>
     </section>
@@ -124,20 +132,20 @@
     <!-- Problem & Solution Section -->
     <section id="problem-solution" class="problem-solution bg-light">
         <div class="container">
-            <h2 class="text-center">Why Waste Time on Repetitive Tasks?</h2>
-            <p class="text-center">Manually formatting code, testing APIs, or debugging regex is time-consuming. Dev Utilities combines the essential developer tools into a single, fast, and user-friendly interface.</p>
+            <h2 class="text-center">Why Use a SIP Calculator?</h2>
+            <p class="text-center">Planning your investments can be complex and time-consuming. Our SIP Calculator simplifies this process, helping you make informed financial decisions.</p>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <i class="fas fa-clock fa-3x mb-3"></i>
-                    <p>Save hours with instant tools for formatting, testing, and debugging.</p>
+                    <i class="fas fa-chart-line fa-3x mb-3"></i>
+                    <p>Visualize your investment growth over time and plan for your financial goals.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-tools fa-3x mb-3"></i>
-                    <p>No need to switch between multiple tools—Dev Utilities has it all.</p>
+                    <i class="fas fa-hand-holding-usd fa-3x mb-3"></i>
+                    <p>Make informed decisions about how much to invest and for how long.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-rocket fa-3x mb-3"></i>
-                    <p>Boost productivity and focus on coding, not repetitive tasks.</p>
+                    <i class="fas fa-piggy-bank fa-3x mb-3"></i>
+                    <p>Compare different investment scenarios to optimize your returns.</p>
                 </div>
             </div>
         </div>
@@ -146,23 +154,26 @@
     <!-- How It Works Section -->
     <section id="how-it-works" class="how-it-works">
         <div class="container">
-            <h2 class="text-center">Get Started in 3 Simple Steps</h2>
+            <h2 class="text-center">Calculate SIP Returns in 3 Simple Steps</h2>
             <div class="row text-center">
                 <div class="col-md-4">
-                    <i class="fas fa-step-forward fa-3x mb-3"></i>
-                    <h4>Step 1: Choose a Tool</h4>
-                    <p>Select the utility you need from the Dev Utilities dashboard.</p>
+                    <i class="fas fa-money-bill-wave fa-3x mb-3"></i>
+                    <h4>Step 1: Enter Investment Amount</h4>
+                    <p>Input the amount you plan to invest monthly through your SIP.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-keyboard fa-3x mb-3"></i>
-                    <h4>Step 2: Input Your Data</h4>
-                    <p>Paste or upload your data, and let the tool do the magic.</p>
+                    <i class="fas fa-calendar-alt fa-3x mb-3"></i>
+                    <h4>Step 2: Set Duration & Expected Returns</h4>
+                    <p>Specify your investment period and expected annual return rate.</p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-check fa-3x mb-3"></i>
-                    <h4>Step 3: Get Results Instantly</h4>
-                    <p>Copy, save, or export results in seconds.</p>
+                    <i class="fas fa-chart-pie fa-3x mb-3"></i>
+                    <h4>Step 3: View Your Results</h4>
+                    <p>Instantly see your projected investment growth and total returns.</p>
                 </div>
+            </div>
+            <div class="text-center mt-4">
+                <img src="./sip-mobile-view.png" alt="SIP Calculator Mobile View" class="img-fluid max-height-400">
             </div>
         </div>
     </section>
@@ -170,13 +181,14 @@
     <!-- Benefits Section -->
     <section id="benefits" class="benefits bg-light">
         <div class="container">
-            <h2 class="text-center">Why Developers Love Dev Utilities</h2>
+            <h2 class="text-center">Benefits of Using SIP Calculator</h2>
             <ul class="list-unstyled text-center">
-                <li><i class="fas fa-check-circle"></i> Time-Saving: No need to search for separate tools; everything is in one place.</li>
-                <li><i class="fas fa-check-circle"></i> Easy-to-Use: Clean, intuitive UI designed for developers of all levels.</li>
-                <li><i class="fas fa-check-circle"></i> Fast and Efficient: Get instant results without hassle.</li>
-                <li><i class="fas fa-check-circle"></i> Accessible Anytime: Works across devices—web-based tools ready wherever you are.</li>
-                <li><i class="fas fa-check-circle"></i> Secure and Reliable: Your data stays private and secure.</li>
+                <li><i class="fas fa-check-circle"></i> Plan Better: Visualize the growth of your investments over time.</li>
+                <li><i class="fas fa-check-circle"></i> Make Informed Decisions: Compare different investment scenarios before committing.</li>
+                <li><i class="fas fa-check-circle"></i> Goal-Oriented Investing: See how your investments align with your financial goals.</li>
+                <li><i class="fas fa-check-circle"></i> Free and Accessible: Available on both web and mobile platforms at no cost.</li>
+                <li><i class="fas fa-check-circle"></i> Created with Flutter: Enjoy a smooth, responsive experience across all devices.</li>
+                <li><i class="fas fa-check-circle"></i> Privacy-Focused: No need to share personal financial information.</li>
             </ul>
         </div>
     </section>
@@ -184,13 +196,27 @@
     <!-- Demo or Screenshots Section -->
     <section id="demo" class="demo">
         <div class="container">
-            <h2 class="text-center">See It in Action</h2>
+            <h2 class="text-center">See SIP Calculator in Action</h2>
             <div class="row">
                 <div class="col-md-6">
-                    <img src="screenshot1.png" alt="Screenshot 1" class="img-fluid">
+                    <div class="card shadow mb-4">
+                        <div class="card-header">
+                            <h5>Web App</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./SIP-tablet-Screenshot.png" alt="SIP Calculator Web Version" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <img src="screenshot2.png" alt="Screenshot 2" class="img-fluid">
+                    <div class="card shadow mb-4">
+                        <div class="card-header">
+                            <h5>Mobile App</h5>
+                        </div>
+                        <div class="card-body">
+                            <img src="./sip-mobile-view.png" alt="SIP Calculator Mobile Version" class="img-fluid">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -199,22 +225,22 @@
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials bg-light">
         <div class="container">
-            <h2 class="text-center">What Developers Are Saying</h2>
+            <h2 class="text-center">What Our Users Are Saying</h2>
             <div class="row">
                 <div class="col-md-4 text-center">
-                    <img src="user1.jpg" alt="User 1" class="rounded-circle mb-3" width="100">
-                    <p>"Dev Utilities has saved me countless hours switching between tools. It’s now a key part of my daily workflow!"</p>
-                    <p><strong>Jane Doe</strong>, Full-Stack Developer</p>
+                    <i class="fas fa-user-circle fa-4x mb-3 text-primary"></i>
+                    <p>"This SIP Calculator helped me plan my investments better. I can now see exactly how my money will grow over time!"</p>
+                    <p><strong>Rahul S.</strong>, First-time Investor</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="user2.jpg" alt="User 2" class="rounded-circle mb-3" width="100">
-                    <p>"The all-in-one toolkit I didn't know I needed. Highly recommend for any developer."</p>
-                    <p><strong>John Smith</strong>, Backend Developer</p>
+                    <i class="fas fa-user-circle fa-4x mb-3 text-primary"></i>
+                    <p>"Simple, accurate, and very useful. I use this app regularly to test different investment scenarios before making decisions."</p>
+                    <p><strong>Priya M.</strong>, Financial Planner</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <img src="user3.jpg" alt="User 3" class="rounded-circle mb-3" width="100">
-                    <p>"A must-have for every developer. It simplifies so many tasks and boosts productivity."</p>
-                    <p><strong>Emily Johnson</strong>, Frontend Developer</p>
+                    <i class="fas fa-user-circle fa-4x mb-3 text-primary"></i>
+                    <p>"The app works flawlessly on both my phone and laptop. I love that I can plan my investments on the go!"</p>
+                    <p><strong>Vijay K.</strong>, Regular Investor</p>
                 </div>
             </div>
         </div>
@@ -223,17 +249,40 @@
     <!-- Pricing Section -->
     <section id="pricing" class="pricing">
         <div class="container">
-            <h2 class="text-center">Flexible Plans for Everyone</h2>
+            <h2 class="text-center">Available Versions</h2>
             <div class="row text-center">
                 <div class="col-md-6">
-                    <h3>Free Plan</h3>
-                    <p>Access essential tools at no cost.</p>
-                    <a href="#" class="btn btn-primary">Get Started for Free</a>
+                    <div class="card shadow mb-4">
+                        <div class="card-header">
+                            <h3>Free Version</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Access all essential features at no cost</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> Basic SIP calculations</li>
+                                <li><i class="fas fa-check text-success"></i> Investment growth projections</li>
+                                <li><i class="fas fa-check text-success"></i> Unlimited calculations</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Download Free</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <h3>Pro Plan</h3>
-                    <p>Unlock premium features for power users—only $X/month.</p>
-                    <a href="#" class="btn btn-secondary">Upgrade to Pro</a>
+                    <div class="card shadow mb-4">
+                        <div class="card-header">
+                            <h3>Premium Version</h3>
+                        </div>
+                        <div class="card-body">
+                            <p>Advanced features for serious investors</p>
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-check text-success"></i> All free features</li>
+                                <li><i class="fas fa-check text-success"></i> Advanced investment scenarios</li>
+                                <li><i class="fas fa-check text-success"></i> Data export & reports</li>
+                                <li><i class="fas fa-check text-success"></i> No ads</li>
+                            </ul>
+                            <a href="#" class="btn btn-secondary">Upgrade to Premium</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -248,13 +297,13 @@
                     <div class="card-header" id="faqHeading1">
                         <h5 class="mb-0">
                             <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                What tools are included in Dev Utilities?
+                                What is SIP?
                             </button>
                         </h5>
                     </div>
                     <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
                         <div class="card-body">
-                            Dev Utilities includes a code formatter, regex tester, JSON formatter/validator, hash generator, Base64 encode/decode, and live API tester.
+                            SIP (Systematic Investment Plan) is an investment strategy where you invest a fixed amount at regular intervals (typically monthly) in mutual funds. It's a disciplined approach to investing that helps to average out the cost of your investments over time.
                         </div>
                     </div>
                 </div>
@@ -262,13 +311,13 @@
                     <div class="card-header" id="faqHeading2">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                Is there a free version available?
+                                How accurate is the SIP Calculator?
                             </button>
                         </h5>
                     </div>
                     <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
                         <div class="card-body">
-                            Yes, Dev Utilities offers a free plan with access to essential tools.
+                            The SIP Calculator provides estimates based on the information you input. While it uses standard financial formulas for calculations, actual returns may vary based on market conditions and fund performance.
                         </div>
                     </div>
                 </div>
@@ -276,13 +325,13 @@
                     <div class="card-header" id="faqHeading3">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
-                                How secure is my data?
+                                Is my financial data secure?
                             </button>
                         </h5>
                     </div>
                     <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
                         <div class="card-body">
-                            Your data stays private and secure. We use industry-standard encryption and security practices.
+                            Yes, all calculations are performed locally on your device. We don't store or collect any of your financial information, ensuring complete privacy and security.
                         </div>
                     </div>
                 </div>
@@ -290,13 +339,13 @@
                     <div class="card-header" id="faqHeading4">
                         <h5 class="mb-0">
                             <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">
-                                Can I use Dev Utilities on multiple devices?
+                                Can I use the SIP Calculator on multiple devices?
                             </button>
                         </h5>
                     </div>
                     <div id="faq4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
                         <div class="card-body">
-                            Yes, Dev Utilities is web-based and works across devices.
+                            Yes, the SIP Calculator works on both web and mobile platforms. It's built with Flutter, providing a consistent experience across all devices.
                         </div>
                     </div>
                 </div>
@@ -307,19 +356,24 @@
     <!-- Final CTA Section -->
     <section id="final-cta" class="final-cta">
         <div class="container text-center">
-            <h2>Start Simplifying Your Development Workflow Today!</h2>
-            <a href="#" class="btn btn-primary btn-lg">Get Started for Free</a>
-            <a href="#" class="btn btn-secondary btn-lg">Try Dev Utilities Now</a>
+            <h2>Start Planning Your Financial Future Today!</h2>
+            <p class="lead mb-4">Download the SIP Calculator and make informed investment decisions</p>
+            <a href="#" class="btn btn-primary btn-lg">Download Now</a>
+            <a href="#" class="btn btn-secondary btn-lg">Try Web Version</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer id="contact">
         <div class="container">
-            <p>Made by developer for Developer</p>
+            <p>Created with Flutter by Financial Enthusiasts</p>
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#contentModal" onclick="loadContent('tnc-key-points.md', 'TnC.md')">Terms &amp; Conditions</a></li>
-                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#contentModal" onclick="loadContent('privacy-key-points.md', 'PRIVACY.md')">Privacy Policy</a></li>
+                <li class="list-inline-item">
+                    <button class="btn btn-link" data-toggle="modal" data-target="#contentModal" onclick="loadContent('tnc-key-points.md', 'TnC.md')">Terms &amp; Conditions</button>
+                </li>
+                <li class="list-inline-item">
+                    <button class="btn btn-link" data-toggle="modal" data-target="#contentModal" onclick="loadContent('privacy-key-points.md', 'PRIVACY.md')">Privacy Policy</button>
+                </li>
             </ul>
         </div>
     </footer>
@@ -345,8 +399,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- Marked.js for Markdown parsing -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <!-- Custom JS -->
     <script>
         function loadContent(file1, file2) {
