@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Add favicon -->
+    <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+    <title>Dev Utilities</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <!-- Marked.js for Markdown parsing -->
+    <script src="./js/marked.min.js"></script>
+        <!-- Custom CSS -->
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .hero {
+            background: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+        footer {
+            background: #f8f9fa;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .features, .problem-solution, .how-it-works, .benefits, .demo, .testimonials, .pricing, .faqs, .final-cta {
+            padding: 60px 0;
+        }
+        .modal-body {
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+        .brand-text {
+            padding-left: 0.5rem;
+        }
+    </style>
+            margin-right: 10px;
+            border-radius: 15%;
+        }
+    </style>
+</head>
+<body>
+            <span class="d-none d-lg-inline brand-text">Dev Utilities</span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand d-flex align-items-center justify-content-center" href="#" style="padding: 10px;">
+            <img src="./images/icon-1024-maskable.png" alt="Logo" class="d-inline-block align-top mx-auto rounded logo-img" width="64" height="64">
+            <span class="d-none d-lg-inline pl-2">Dev Utilities</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <h1 class="display-4">Simplify Your Development Workflow with Dev Utilities</h1>
+            <p class="lead">Dev Utilities offers an all-in-one toolkit for developers to streamline, optimize, and automate daily development tasks effortlessly.</p>
+            <a href="#" class="btn btn-primary btn-lg">Get Started Free</a>
+            <a href="#features" class="btn btn-secondary btn-lg">Explore Features</a>
+            <img src="./images/icon-1024-maskable.png" alt="Hero Image" class="img-fluid mt-4">
+        </div>
+    </section>
+
+    <!-- Key Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="text-center">Powerful Tools, All in One Place</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-code fa-3x mb-3"></i>
+                    <h4>Code Formatter & Beautifier</h4>
+                    <p>Automatically format your code for better readability and maintainability.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-vial fa-3x mb-3"></i>
+                    <h4>Regex Tester</h4>
+                    <p>Quickly build, test, and debug regular expressions.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-code-branch fa-3x mb-3"></i>
+                    <h4>JSON Formatter/Validator</h4>
+                    <p>Easily format and validate JSON data with a single click.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-lock fa-3x mb-3"></i>
+                    <h4>Hash Generator</h4>
+                    <p>Generate secure hashes for encryption and verification.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-exchange-alt fa-3x mb-3"></i>
+                    <h4>Base64 Encode/Decode</h4>
+                    <p>Convert data to Base64 encoding and decode effortlessly.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-network-wired fa-3x mb-3"></i>
+                    <h4>Live API Tester</h4>
+                    <p>Test your APIs live, inspect responses, and debug efficiently.</p>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary">Explore More Tools →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem & Solution Section -->
+    <section id="problem-solution" class="problem-solution bg-light">
+        <div class="container">
+            <h2 class="text-center">Why Waste Time on Repetitive Tasks?</h2>
+            <p class="text-center">Manually formatting code, testing APIs, or debugging regex is time-consuming. Dev Utilities combines the essential developer tools into a single, fast, and user-friendly interface.</p>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-clock fa-3x mb-3"></i>
+                    <p>Save hours with instant tools for formatting, testing, and debugging.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-tools fa-3x mb-3"></i>
+                    <p>No need to switch between multiple tools—Dev Utilities has it all.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-rocket fa-3x mb-3"></i>
+                    <p>Boost productivity and focus on coding, not repetitive tasks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="text-center">Get Started in 3 Simple Steps</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <i class="fas fa-step-forward fa-3x mb-3"></i>
+                    <h4>Step 1: Choose a Tool</h4>
+                    <p>Select the utility you need from the Dev Utilities dashboard.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-keyboard fa-3x mb-3"></i>
+                    <h4>Step 2: Input Your Data</h4>
+                    <p>Paste or upload your data, and let the tool do the magic.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="fas fa-check fa-3x mb-3"></i>
+                    <h4>Step 3: Get Results Instantly</h4>
+                    <p>Copy, save, or export results in seconds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="benefits bg-light">
+        <div class="container">
+            <h2 class="text-center">Why Developers Love Dev Utilities</h2>
+            <ul class="list-unstyled text-center">
+                <li><i class="fas fa-check-circle"></i> Time-Saving: No need to search for separate tools; everything is in one place.</li>
+                <li><i class="fas fa-check-circle"></i> Easy-to-Use: Clean, intuitive UI designed for developers of all levels.</li>
+                <li><i class="fas fa-check-circle"></i> Fast and Efficient: Get instant results without hassle.</li>
+                <li><i class="fas fa-check-circle"></i> Accessible Anytime: Works across devices—web-based tools ready wherever you are.</li>
+                <li><i class="fas fa-check-circle"></i> Secure and Reliable: Your data stays private and secure.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Demo or Screenshots Section -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2 class="text-center">See It in Action</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="screenshot1.png" alt="Screenshot 1" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <img src="screenshot2.png" alt="Screenshot 2" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials bg-light">
+        <div class="container">
+            <h2 class="text-center">What Developers Are Saying</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <img src="user1.jpg" alt="User 1" class="rounded-circle mb-3" width="100">
+                    <p>"Dev Utilities has saved me countless hours switching between tools. It’s now a key part of my daily workflow!"</p>
+                    <p><strong>Jane Doe</strong>, Full-Stack Developer</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="user2.jpg" alt="User 2" class="rounded-circle mb-3" width="100">
+                    <p>"The all-in-one toolkit I didn't know I needed. Highly recommend for any developer."</p>
+                    <p><strong>John Smith</strong>, Backend Developer</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="user3.jpg" alt="User 3" class="rounded-circle mb-3" width="100">
+                    <p>"A must-have for every developer. It simplifies so many tasks and boosts productivity."</p>
+                    <p><strong>Emily Johnson</strong>, Frontend Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2 class="text-center">Flexible Plans for Everyone</h2>
+            <div class="row text-center">
+                <div class="col-md-6">
+                    <h3>Free Plan</h3>
+                    <p>Access essential tools at no cost.</p>
+                    <a href="#" class="btn btn-primary">Get Started for Free</a>
+                </div>
+                <div class="col-md-6">
+                    <h3>Pro Plan</h3>
+                    <p>Unlock premium features for power users—only $X/month.</p>
+                    <a href="#" class="btn btn-secondary">Upgrade to Pro</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section id="faqs" class="faqs bg-light">
+        <div class="container">
+            <h2 class="text-center">Frequently Asked Questions</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="card">
+                    <div class="card-header" id="faqHeading1">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                                What tools are included in Dev Utilities?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Dev Utilities includes a code formatter, regex tester, JSON formatter/validator, hash generator, Base64 encode/decode, and live API tester.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeading2">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                                Is there a free version available?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, Dev Utilities offers a free plan with access to essential tools.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeading3">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                                How secure is my data?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Your data stays private and secure. We use industry-standard encryption and security practices.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="faqHeading4">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                                Can I use Dev Utilities on multiple devices?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="faq4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                        <div class="card-body">
+                            Yes, Dev Utilities is web-based and works across devices.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA Section -->
+    <section id="final-cta" class="final-cta">
+        <div class="container text-center">
+            <h2>Start Simplifying Your Development Workflow Today!</h2>
+            <a href="#" class="btn btn-primary btn-lg">Get Started for Free</a>
+            <a href="#" class="btn btn-secondary btn-lg">Try Dev Utilities Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>Made by developer for Developer</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#contentModal" onclick="loadContent('tnc-key-points.md', 'TnC.md')">Terms &amp; Conditions</a></li>
+                <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#contentModal" onclick="loadContent('privacy-key-points.md', 'PRIVACY.md')">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Modal Template -->
+    <div class="modal fade" id="contentModal" tabindex="-1" aria-labelledby="contentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contentModalLabel">Content</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="modalContent"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Marked.js for Markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Custom JS -->
+    <script>
+        function loadContent(file1, file2) {
+            fetch(file1)
+                .then(response => response.text())
+                .then(text1 => {
+                    fetch(file2)
+                        .then(response => response.text())
+                        .then(text2 => {
+                            document.getElementById('modalContent').innerHTML = marked.parse(text1 + '\n\n' + text2);
+                        });
+                });
+        }
+    </script>
+</body>
+</html>
